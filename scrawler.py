@@ -7,5 +7,5 @@ goal=soup(score.read())
 
 for link in goal.findAll('a'):
     if 'href' in link.attrs:
-        print(link.attrs('href')) # if href present in the url
-    print("No Href")      #if no href in the url     
+        print(link.attrs['href']) # if href present in the url 
+    pass         #if no href in the url     
